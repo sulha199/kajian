@@ -1,5 +1,12 @@
 {
   "compilerOptions": {
+    "baseUrl": "./",
+    "paths": {
+      "Assets": [ "src/assets"],
+      "Components": [ "src/components"],
+      "Pages": [ "src/pages"],
+      "Services": [ "src/services"],
+    },
     "target": "es5",
     "lib": [
       "dom",
@@ -9,6 +16,7 @@
     "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
+    "typeRoots": ["./src/@types", "./node_modules/@types"],
     "allowSyntheticDefaultImports": true,
     "strict": true,
     "forceConsistentCasingInFileNames": true,
@@ -18,7 +26,7 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx"
+    "jsx": "react"
   },
   "include": [
     "src"
